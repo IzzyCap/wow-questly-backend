@@ -5,7 +5,7 @@ Backend API REST modular preparado para migrar a microservicios/lambdas.
 ## Estructura del Proyecto
 
 ```
-wow-missions/
+wow-questly/
 ├── packages/              # Código compartido
 │   ├── database/         # Prisma Client + schema
 │   └── types/           # TypeScript types compartidos

@@ -1,4 +1,4 @@
-import { prisma } from '../../../../src/database/src/index.ts';
+import { prisma } from '@wow-questly/database';
 import { redis } from '../lib/redis';
 
 export async function searchMissions(query: string) {

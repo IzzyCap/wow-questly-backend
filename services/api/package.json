@@ -1,16 +1,16 @@
 {
-  "name": "@wow-missions/api",
+  "name": "@wow-questly/api",
   "version": "1.0.0",
   "main": "src/index.ts",
   "scripts": {
-    "dev": "tsx watch src/index.ts",
+    "dev": "tsx watch --env-file=../../.env src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js"
   },
   "dependencies": {
     "@fastify/cors": "^11.1.0",
-    "@wow-missions/database": "*",
-    "@wow-missions/types": "*",
+    "@wow-questly/database": "*",
+    "@wow-questly/types": "*",
     "fastify": "^5.0.0",
     "ioredis": "^5.0.0"
   },

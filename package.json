@@ -1,5 +1,5 @@
 {
-  "name": "wow-missions",
+  "name": "wow-questly",
   "version": "1.0.0",
   "private": true,
   "workspaces": [
@@ -7,10 +7,10 @@
     "services/*"
   ],
   "scripts": {
-    "dev": "npm run dev --workspace=@wow-missions/api",
-    "db:generate": "npm run generate --workspace=@wow-missions/database",
-    "db:migrate": "npm run migrate:dev --workspace=@wow-missions/database",
-    "db:studio": "npm run studio --workspace=@wow-missions/database",
+    "dev": "npm run dev --workspace=@wow-questly/api",
+    "db:generate": "npm run generate --workspace=@wow-questly/database",
+    "db:migrate": "npm run migrate:dev --workspace=@wow-questly/database",
+    "db:studio": "npm run studio --workspace=@wow-questly/database",
     "docker:up": "docker-compose up -d",
     "docker:down": "docker-compose down"
   },
