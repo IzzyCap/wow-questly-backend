@@ -1,0 +1,22 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Mission {
+  id            Int      @id @default(autoincrement())
+  title         String
+  slug          String   @unique
+  description   String   // texto completo
+  objectives    String?
+  zone          String?
+  expansion     String?
+  coords        Json?
+  youtubeId     String?  // video recomendado
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}

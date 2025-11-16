@@ -1,0 +1,21 @@
+{
+  "name": "wow-missions",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "services/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@wow-missions/api",
+    "db:generate": "npm run generate --workspace=@wow-missions/database",
+    "db:migrate": "npm run migrate:dev --workspace=@wow-missions/database",
+    "db:studio": "npm run studio --workspace=@wow-missions/database",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  }
+}
